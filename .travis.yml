@@ -1,0 +1,17 @@
+language: scala
+sudo: required
+
+jdk:
+  - oraclejdk8
+  
+before_script:
+ - ulimit -c
+ - ulimit -a -S
+ - ulimit -a -H
+ - ulimit -c unlimited -S
+ - ulimit -c
+ - ulimit -a -S
+ - ulimit -a -H
+
+script:
+  - sbt test
