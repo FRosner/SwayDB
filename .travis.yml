@@ -5,9 +5,7 @@ jdk:
   - oraclejdk8
   
 before_script:
- - ulimit -n
- - sudo ulimit -n 1024000
- - ulimit -n
+  - ulimit -n
 
 script:
-  - sbt test
+  - sbt "project core" test
