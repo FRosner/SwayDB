@@ -6,7 +6,7 @@ jdk:
   
 before_script:
  - ulimit -n
- - ulimit -n 1024000
+ - sudo ulimit -n 1024000
  - ulimit -n
 
 script:
