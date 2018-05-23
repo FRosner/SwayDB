@@ -8,7 +8,7 @@ before_script:
   - ulimit -n
 
 script:
-  - sbt "project core" test
+  - sbt testOnly "swaydb.core.tool.*"
 
 before_cache:
   # Cleanup the cached directories to avoid unnecessary cache updates
